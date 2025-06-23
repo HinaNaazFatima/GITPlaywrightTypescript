@@ -2,7 +2,7 @@ import { chromium,test } from "@playwright/test";
 
 test("NavigateToWebsite",async()=>{
 //initiates chromium and headless false meaning chrome browser will open
-const browser=await chromium.launch({headless:true});
+const browser=await chromium.launch({headless:false});
 //open new session of chrome browser
 //playwright support multiple context
 const context = await browser.newContext();
