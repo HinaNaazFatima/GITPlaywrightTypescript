@@ -8,7 +8,7 @@ test("NavigateNHover",async({page})=>{
     await page.hover("//*[@id='header-nav']/div/ul/li[2]/a");
     await page.waitForTimeout(10000);
     //click on sale
-    await page.click("//*[@id='header-nav']/div/ul/li[2]/div/div/ul/li[2]/a")
+    //await page.locator("//*[@id='header-nav']/div/ul/li[2]/div/div/ul/li[2]/a").click();
     //await page.waitForTimeout(30000);
     //using xpath click on sign  
     await page.locator("//*[@id='account-menu']/li/a/span").click();
